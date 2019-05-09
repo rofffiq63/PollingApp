@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "668601697358",
+    "firebase_url": "https://polling-app-cfd07.firebaseio.com",
+    "project_id": "polling-app-cfd07",
+    "storage_bucket": "polling-app-cfd07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668601697358:android:b416d7536feefd20",
+        "android_client_info": {
+          "package_name": "under.the.bridge.pollingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668601697358-l7tq2tj3m92ht6jnp8rmebmbsqanil15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "under.the.bridge.pollingapp",
+            "certificate_hash": "afc59f45ab6d597bbbe39d355c2f72e6df90555b"
+          }
+        },
+        {
+          "client_id": "668601697358-be4dps595db0kjomeesc7bnpf5iotm8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcEqesAz7Qsq1Pb3Jkf6rnVZ95hCRW9eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668601697358-be4dps595db0kjomeesc7bnpf5iotm8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8Îþ…Ä©-
+gsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(¨ÁÇÍûÿÿÿÿ
+bsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(®ïßú
+bsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(ÆÁ¤õ
+`squid:UselessImportCheck"0Remove this unused import 'okhttp3.RequestBody'.(ýÂÂöûÿÿÿÿ8Îþ…Ä©-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Îþ…Ä©-
+gsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(Š˜æÞÿÿÿÿÿ
+bsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(îŽö­
+gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ù¬”Ÿÿÿÿÿÿ
+]squid:UselessImportCheck"2Remove this unused import 'okhttp3.MultipartBody'.(ÕœˆŒ8Îþ…Ä©-
+Zsquid:UselessImportCheck
+"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8Îþ…Ä©-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Îþ…Ä©-
+zsquid:UselessImportCheck"ORemove this unused import 'under.the.bridge.pollingapp.model.ApiResponseModel'.(ËÖøá8¾’ÝÄ©-
+gsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(ÛäŠÊ
+¤squid:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åí›®ÿÿÿÿÿ8ôÚÕÄ©-
+nsquid:UselessImportCheck"DRemove this unused import 'rx.android.schedulers.AndroidSchedulers'.(‘¢¹Z8Îþ…Ä©-
