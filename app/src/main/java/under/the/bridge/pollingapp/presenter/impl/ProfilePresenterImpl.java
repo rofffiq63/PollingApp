@@ -4,21 +4,21 @@ import android.support.annotation.NonNull;
 
 import javax.inject.Inject;
 
-import under.the.bridge.pollingapp.interactor.TalksInteractor;
-import under.the.bridge.pollingapp.presenter.TalksPresenter;
-import under.the.bridge.pollingapp.view.TalksView;
+import under.the.bridge.pollingapp.interactor.ProfileInteractor;
+import under.the.bridge.pollingapp.presenter.ProfilePresenter;
+import under.the.bridge.pollingapp.view.ProfileView;
 
-public final class TalksPresenterImpl extends BasePresenterImpl<TalksView> implements TalksPresenter {
+public final class ProfilePresenterImpl extends BasePresenterImpl<ProfileView> implements ProfilePresenter {
     /**
      * The interactor
      */
     @NonNull
-    private final TalksInteractor mInteractor;
+    private final ProfileInteractor mInteractor;
 
     // The view is available using the mView variable
 
     @Inject
-    public TalksPresenterImpl(@NonNull TalksInteractor interactor) {
+    public ProfilePresenterImpl(@NonNull ProfileInteractor interactor) {
         mInteractor = interactor;
     }
 

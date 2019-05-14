@@ -40,6 +40,7 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
     @Inject
     PresenterFactory<HomePresenter> mPresenterFactory;
     private TalksFragment talksFragment;
+    private ProfileFragment profileFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,8 +133,8 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
             case 4:
                 if (bottom.getCurrentItem() != 4) {
                     LAST_TAG_SELECTED = TAG_PROFILE;
-                    // fragmentProfile = new ProfilFragment();
-                    //callFragment(fragmentProfile, TAG_PROFILE);
+                    profileFragment = new ProfileFragment();
+                    callFragment(profileFragment, TAG_PROFILE);
                 }
                 break;
             default:
@@ -165,6 +166,11 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
                 talksFragment = (TalksFragment)
                         getSupportFragmentManager().findFragmentByTag(TAG_TALKS);
                 bottom.setCurrentItem(0);
+                break;
+            case TAG_PROFILE:
+                profileFragment = (ProfileFragment)
+                        getSupportFragmentManager().findFragmentByTag(TAG_PROFILE);
+                bottom.setCurrentItem(4);
                 break;
         }
     }

@@ -11,21 +11,20 @@ import javax.inject.Inject;
 
 import under.the.bridge.pollingapp.R;
 import under.the.bridge.pollingapp.injection.AppComponent;
-import under.the.bridge.pollingapp.injection.DaggerTalksViewComponent;
-import under.the.bridge.pollingapp.injection.TalksViewModule;
-import under.the.bridge.pollingapp.presenter.TalksPresenter;
+import under.the.bridge.pollingapp.injection.DaggerProfileViewComponent;
+import under.the.bridge.pollingapp.injection.ProfileViewModule;
+import under.the.bridge.pollingapp.presenter.ProfilePresenter;
 import under.the.bridge.pollingapp.presenter.loader.PresenterFactory;
-import under.the.bridge.pollingapp.view.TalksView;
+import under.the.bridge.pollingapp.view.ProfileView;
 
-public final class TalksFragment extends BaseFragment<TalksPresenter, TalksView> implements TalksView {
-
+public class ProfileFragment extends BaseFragment<ProfilePresenter, ProfileView> implements ProfileView {
     @Inject
-    PresenterFactory<TalksPresenter> mPresenterFactory;
+    PresenterFactory<ProfilePresenter> mPresenterFactory;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_talks, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
 
     }
 
@@ -51,15 +50,15 @@ public final class TalksFragment extends BaseFragment<TalksPresenter, TalksView>
 
     @NonNull
     @Override
-    protected PresenterFactory<TalksPresenter> getPresenterFactory() {
+    protected PresenterFactory<ProfilePresenter> getPresenterFactory() {
         return mPresenterFactory;
     }
 
     @Override
     protected void setupComponent(@NonNull AppComponent parentComponent) {
-        DaggerTalksViewComponent.builder()
+        DaggerProfileViewComponent.builder()
                 .appComponent(parentComponent)
-                .talksViewModule(new TalksViewModule())
+                .profileViewModule(new ProfileViewModule())
                 .build()
                 .inject(this);
     }
