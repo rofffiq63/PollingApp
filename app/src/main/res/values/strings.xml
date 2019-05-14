@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Polling App</string>
     <string name="firebase_auth_token">AIzaSyBcEqesAz7Qsq1Pb3Jkf6rnVZ95hCRW9eg</string>
+    <string name="talks">Talks</string>
+    <string name="moments">Moments</string>
+    <string name="search">Search</string>
+    <string name="learn">Learn</string>
+    <string name="profile">Profile</string>
+    <string name="minus">-</string>
+    <string name="title">Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="date">Date</string>
 </resources>
