@@ -37,7 +37,7 @@ public final class SplashActivity extends BaseActivity<SplashPresenter, SplashVi
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
             }
         }, 2000);
     }

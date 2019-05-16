@@ -29,17 +29,19 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
     private static final String TAG_TALKS = "tagtalks";
     private static final String TAG_MOMENT = "tagmoment";
     private static final String TAG_SEARCH = "tagsearch";
-    private static final String TAG_LEARN = "taglearn";
+    private static final String TAG_FAVORITES = "tagfavorites";
     private static final String TAG_PROFILE = "tagprofile";
+    private static final String TAG_FEEDS = "tagfeeds";
     private static final String BUNDLE_TAG = "lasttagselected";
     // Your presenter is available using the mPresenter variable\
     @BindView(R.id.bottom_navigation)
     AHBottomNavigation bottom;
-    private String LAST_TAG_SELECTED = TAG_TALKS;
+    private String LAST_TAG_SELECTED = TAG_FEEDS;
 
     @Inject
     PresenterFactory<HomePresenter> mPresenterFactory;
     private TalksFragment talksFragment;
+    private FeedsFragment feedsFragment;
     private ProfileFragment profileFragment;
 
     @Override
@@ -53,8 +55,8 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
         setupBottom();
 
         if (savedInstanceState == null) {
-            talksFragment = new TalksFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_main, talksFragment).commit();
+            feedsFragment = new FeedsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_main, feedsFragment).commit();
         } else {
             LAST_TAG_SELECTED = savedInstanceState.getString(BUNDLE_TAG);
             if (LAST_TAG_SELECTED != null) selectFragmentState(LAST_TAG_SELECTED);
@@ -84,16 +86,16 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
     }
 
     private void setupBottom() {
-        AHBottomNavigationItem talks = new AHBottomNavigationItem("Talks", AppCompatResources.getDrawable(this, R.drawable.ic_message_black));
-        AHBottomNavigationItem moments = new AHBottomNavigationItem("Moments", AppCompatResources.getDrawable(this, R.drawable.ic_group_work));
-        AHBottomNavigationItem search = new AHBottomNavigationItem("Search", AppCompatResources.getDrawable(this, R.drawable.ic_search_black));
-        AHBottomNavigationItem learn = new AHBottomNavigationItem("Learn", AppCompatResources.getDrawable(this, R.drawable.ic_extension_black));
-        AHBottomNavigationItem profile = new AHBottomNavigationItem("Profile", AppCompatResources.getDrawable(this, R.drawable.ic_person_outline_black));
+        AHBottomNavigationItem feeds = new AHBottomNavigationItem("", AppCompatResources.getDrawable(this, R.drawable.ic_message_black));
+        AHBottomNavigationItem adds = new AHBottomNavigationItem("", AppCompatResources.getDrawable(this, R.drawable.ic_add_black));
+        AHBottomNavigationItem search = new AHBottomNavigationItem("", AppCompatResources.getDrawable(this, R.drawable.ic_search_black));
+        AHBottomNavigationItem favorites = new AHBottomNavigationItem("", AppCompatResources.getDrawable(this, R.drawable.ic_favorite_border_black));
+        AHBottomNavigationItem profile = new AHBottomNavigationItem("", AppCompatResources.getDrawable(this, R.drawable.ic_person_outline_black));
 
-        bottom.addItem(talks);
-        bottom.addItem(moments);
+        bottom.addItem(feeds);
+        bottom.addItem(adds);
         bottom.addItem(search);
-        bottom.addItem(learn);
+        bottom.addItem(favorites);
         bottom.addItem(profile);
 
         bottom.setCurrentItem(0);
@@ -114,24 +116,24 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
         switch (position) {
             case 0:
                 if (bottom.getCurrentItem() != 0) {
-                    LAST_TAG_SELECTED = TAG_TALKS;
-                    talksFragment = new TalksFragment();
-                    callFragment(talksFragment, TAG_TALKS);
+                    LAST_TAG_SELECTED = TAG_FEEDS;
+                    feedsFragment = new FeedsFragment();
+                    callFragment(feedsFragment, TAG_FEEDS);
                 }
                 break;
             case 1:
                 break;
             case 2:
-                break;
-            case 3:
-                if (bottom.getCurrentItem() != 3) {
-                    LAST_TAG_SELECTED = TAG_LEARN;
+                if (bottom.getCurrentItem() != 1) {
+                    LAST_TAG_SELECTED = TAG_SEARCH;
                     //fragmentCart = new CartFragment();
                     //callFragment(fragmentCart, TAG_LEARN);
                 }
                 break;
+            case 3:
+                break;
             case 4:
-                if (bottom.getCurrentItem() != 4) {
+                if (bottom.getCurrentItem() != 2) {
                     LAST_TAG_SELECTED = TAG_PROFILE;
                     profileFragment = new ProfileFragment();
                     callFragment(profileFragment, TAG_PROFILE);

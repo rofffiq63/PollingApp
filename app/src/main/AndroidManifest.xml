@@ -14,10 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.impl.FavoritesActivity"></activity>
+        <activity android:name=".view.impl.FavoritesActivity" />
         <activity android:name=".view.impl.HomeActivity" />
         <activity android:name=".view.impl.LoginActivity" />
-        <activity android:name=".view.impl.SplashActivity">
+        <activity android:name=".view.impl.SplashActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
