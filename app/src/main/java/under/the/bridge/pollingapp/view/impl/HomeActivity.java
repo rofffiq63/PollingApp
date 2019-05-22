@@ -20,6 +20,7 @@ import under.the.bridge.pollingapp.R;
 import under.the.bridge.pollingapp.injection.AppComponent;
 import under.the.bridge.pollingapp.injection.DaggerHomeViewComponent;
 import under.the.bridge.pollingapp.injection.HomeViewModule;
+import under.the.bridge.pollingapp.model.PollingData;
 import under.the.bridge.pollingapp.presenter.HomePresenter;
 import under.the.bridge.pollingapp.presenter.loader.PresenterFactory;
 import under.the.bridge.pollingapp.view.HomeView;
@@ -53,6 +54,11 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
         // Your code here
         // Do not call mPresenter from here, it will be null! Wait for onStart or onPostCreate.
         setupBottom();
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
 
         if (savedInstanceState == null) {
             feedsFragment = new FeedsFragment();
@@ -61,13 +67,6 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
             LAST_TAG_SELECTED = savedInstanceState.getString(BUNDLE_TAG);
             if (LAST_TAG_SELECTED != null) selectFragmentState(LAST_TAG_SELECTED);
         }
-    }
-
-
-    @Override
-    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-
     }
 
     @Override
@@ -174,6 +173,17 @@ public final class HomeActivity extends BaseActivity<HomePresenter, HomeView> im
                         getSupportFragmentManager().findFragmentByTag(TAG_PROFILE);
                 bottom.setCurrentItem(4);
                 break;
+        }
+    }
+
+    public void getPolls() {
+        mPresenter.getPolls();
+    }
+
+    @Override
+    public <T> void onGeneralSuccess(T response) {
+        if (response instanceof PollingData){
+            feedsFragment.dataReady((PollingData) response);
         }
     }
 }

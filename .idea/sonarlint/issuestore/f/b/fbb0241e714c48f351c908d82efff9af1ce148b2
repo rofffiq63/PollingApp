@@ -1,7 +1,7 @@
 
-€squid:S1450"]Remove the "sessionManager" field and declare it as a local variable in the relevant methods.(¥óƒçþÿÿÿÿ8—È¾Ä©-
+zsquid:S1450"WRemove the "activity" field and declare it as a local variable in the relevant methods.(‰€Ôßûÿÿÿÿ8ƒŒýÃ©-
+nsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(˜µ¨»øÿÿÿÿ8‹Õ€Ä©-
+›"squid:ClassVariableVisibilityCheck"aMake endPointBridgeService a static final constant or non-public and provide accessors if needed.(–ÕžÏûÿÿÿÿ8—¹ÁÄ©-
 Ž"squid:ClassVariableVisibilityCheck"YMake subscriptions a static final constant or non-public and provide accessors if needed.(˜ô·á8ûšÁÄ©-
 Usquid:S1068"2Remove this unused "sessionManager" private field.(¥óƒçþÿÿÿÿ8—È¾Ä©-
-nsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(˜µ¨»øÿÿÿÿ8‹Õ€Ä©-
-zsquid:S1450"WRemove the "activity" field and declare it as a local variable in the relevant methods.(‰€Ôßûÿÿÿÿ8ƒŒýÃ©-
-›"squid:ClassVariableVisibilityCheck"aMake endPointBridgeService a static final constant or non-public and provide accessors if needed.(–ÕžÏûÿÿÿÿ8—¹ÁÄ©-
+€squid:S1450"]Remove the "sessionManager" field and declare it as a local variable in the relevant methods.(¥óƒçþÿÿÿÿ8—È¾Ä©-

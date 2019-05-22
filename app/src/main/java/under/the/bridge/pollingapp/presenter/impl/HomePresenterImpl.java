@@ -2,7 +2,10 @@ package under.the.bridge.pollingapp.presenter.impl;
 
 import android.support.annotation.NonNull;
 
+import under.the.bridge.pollingapp.model.PollingData;
 import under.the.bridge.pollingapp.presenter.HomePresenter;
+import under.the.bridge.pollingapp.utils.EndPointBridgeService;
+import under.the.bridge.pollingapp.utils.NetworkError;
 import under.the.bridge.pollingapp.view.HomeView;
 import under.the.bridge.pollingapp.interactor.HomeInteractor;
 
@@ -44,5 +47,20 @@ public final class HomePresenterImpl extends BasePresenterImpl<HomeView> impleme
          */
 
         super.onPresenterDestroyed();
+    }
+
+    @Override
+    public void getPolls() {
+        subscriptions.add(endPointBridgeService.getPolls(new EndPointBridgeService.GetCallbackResponse<PollingData>() {
+            @Override
+            public void onSuccess(PollingData response) {
+                mView.onGeneralSuccess(response);
+            }
+
+            @Override
+            public void onError(NetworkError networkError) {
+                mView.onGeneralFailure(networkError);
+            }
+        }));
     }
 }

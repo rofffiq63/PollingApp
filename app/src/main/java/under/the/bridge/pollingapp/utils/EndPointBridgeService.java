@@ -20,6 +20,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 import under.the.bridge.pollingapp.model.ApiResponseModel;
 import under.the.bridge.pollingapp.model.PollLoginResponse;
+import under.the.bridge.pollingapp.model.PollingData;
 
 /**
  * Created by ennur on 6/25/16.
@@ -66,6 +67,7 @@ public class EndPointBridgeService {
                 eml
         )
                 .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
                 .onErrorResumeNext(new Func1<Throwable, Observable<? extends PollLoginResponse>>() {
                     @Override
                     public Observable<? extends PollLoginResponse> call(Throwable throwable) {
@@ -86,6 +88,34 @@ public class EndPointBridgeService {
                     @Override
                     public void onNext(PollLoginResponse pollLoginResponse) {
                         callbackApiResponse.onSuccess(pollLoginResponse);
+                    }
+                });
+    }
+
+    public Subscription getPolls(final GetCallbackResponse<PollingData> pollingDataGetCallbackResponse) {
+        return endPointService.getPolls()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .onErrorResumeNext(new Func1<Throwable, Observable<? extends PollingData>>() {
+                    @Override
+                    public Observable<? extends PollingData> call(Throwable throwable) {
+                        return Observable.error(throwable);
+                    }
+                })
+                .subscribe(new Subscriber<PollingData>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        pollingDataGetCallbackResponse.onError(new NetworkError(e));
+                    }
+
+                    @Override
+                    public void onNext(PollingData pollingData) {
+                        pollingDataGetCallbackResponse.onSuccess(pollingData);
                     }
                 });
     }

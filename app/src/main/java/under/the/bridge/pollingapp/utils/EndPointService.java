@@ -18,6 +18,7 @@ import retrofit2.http.Query;
 import retrofit2.http.Url;
 import rx.Observable;
 import under.the.bridge.pollingapp.model.PollLoginResponse;
+import under.the.bridge.pollingapp.model.PollingData;
 
 /**
  * Created by ennur on 6/25/16.
@@ -27,5 +28,8 @@ public interface EndPointService {
     @POST("login")
     @FormUrlEncoded
     Observable<PollLoginResponse> loginPoll(@Field("google_id") String gId, @Field("name") String nm, @Field("email") String eml);
+
+    @GET("polls")
+    Observable<PollingData> getPolls();
 
 }
