@@ -1,10 +1,10 @@
 
+squid:S1450,"\Remove the "talksFragment" field and declare it as a local variable in the relevant methods.(ÙËÅüÿÿÿÿ8šá×Ù«-
+lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ºÜÚ¿8•ûˆÙ«-
 {squid:S00116("\Rename this field "LAST_TAG_SELECTED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÔÉ¶8•ûˆÙ«-
 ]"squid:SwitchLastCaseIsDefaultCheck¥""Add a default case to this switch.(ü¬Ñşÿÿÿÿ8ıÖ­‹¬-
-jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(³Üš¥8ıÖ­‹¬-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ºÜÚ¿8•ûˆÙ«-
-Tsquid:S1068!"1Remove this unused "TAG_FAVORITES" private field.(œäñøÿÿÿÿ8ä æİ«-
-Tsquid:S1068,"1Remove this unused "talksFragment" private field.(ÙËÅüÿÿÿÿ8šá×Ù«-
 Qsquid:S1068".Remove this unused "TAG_MOMENT" private field.(ÙßÛüÿÿÿÿ8•ûˆÙ«-
+Tsquid:S1068,"1Remove this unused "talksFragment" private field.(ÙËÅüÿÿÿÿ8šá×Ù«-
 osquid:S1301¥"KReplace this "switch" statement by "if" statements to increase readability.(ü¬Ñşÿÿÿÿ8ıÖ­‹¬-
-squid:S1450,"\Remove the "talksFragment" field and declare it as a local variable in the relevant methods.(ÙËÅüÿÿÿÿ8šá×Ù«-
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(³Üš¥8ıÖ­‹¬-
+Tsquid:S1068!"1Remove this unused "TAG_FAVORITES" private field.(œäñøÿÿÿÿ8ä æİ«-

@@ -1,19 +1,19 @@
 
-gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
 gsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(¨ÁÇÍûÿÿÿÿ
-¤squid:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åí›®ÿÿÿÿÿ8×°üŠ¬-
+bsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(®ïßú
 zsquid:UselessImportCheck"ORemove this unused import 'under.the.bridge.pollingapp.model.ApiResponseModel'.(ËÖøá8¾’ÝÄ©-
-`squid:UselessImportCheck"0Remove this unused import 'okhttp3.RequestBody'.(ýÂÂöûÿÿÿÿ8Îþ…Ä©-
-]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Îþ…Ä©-
-Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8Îþ…Ä©-
-bsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(ÛäŠÊ
-gsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(Š˜æÞÿÿÿÿÿ
-^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Îþ…Ä©-
-bsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(ÆÁ¤õ
-gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ù¬”Ÿÿÿÿÿÿ
+gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
 Zsquid:UselessImportCheck
 "*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8Îþ…Ä©-
-¤squid:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åí›®ÿÿÿÿÿ8ôÚÕÄ©-
+gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ù¬”Ÿÿÿÿÿÿ
+¤squid:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åí›®ÿÿÿÿÿ8×°üŠ¬-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Îþ…Ä©-
+bsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(ÆÁ¤õ
 bsquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(îŽö­
-bsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(®ïßú
+bsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(ÛäŠÊ
 ]squid:UselessImportCheck"2Remove this unused import 'okhttp3.MultipartBody'.(ÕœˆŒ8Îþ…Ä©-
+¤squid:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åí›®ÿÿÿÿÿ8ôÚÕÄ©-
+`squid:UselessImportCheck"0Remove this unused import 'okhttp3.RequestBody'.(ýÂÂöûÿÿÿÿ8Îþ…Ä©-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Îþ…Ä©-
+gsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(Š˜æÞÿÿÿÿÿ
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ð¥Å8Îþ…Ä©-

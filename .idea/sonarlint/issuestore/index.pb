@@ -133,3 +133,11 @@ Japp/src/main/java/under/the/bridge/pollingapp/presenter/HomePresenter.java,c\6
 Sapp/src/main/java/under/the/bridge/pollingapp/presenter/impl/HomePresenterImpl.java,e\4\e4bad2d68aea1f8671712b7eadead659a4bc964e
 z
 Japp/src/main/java/under/the/bridge/pollingapp/view/impl/FeedsFragment.java,7\b\7b36b11c342be02126e7c282f7d625b1ae963e81
+v
+Fapp/src/main/java/under/the/bridge/pollingapp/model/PollingRating.java,1\f\1f033fdb1fe0f74e78d045f2f4f856acf6d27031
+u
+Eapp/src/main/java/under/the/bridge/pollingapp/model/PollingStore.java,d\e\de88f4a451684a681ab2d0b1c8bcefef89e72ce7
+v
+Fapp/src/main/java/under/the/bridge/pollingapp/model/PollingReview.java,9\c\9c21dec1c71e594ed066945a6912cc4c1d5a203c
+t
+Dapp/src/main/java/under/the/bridge/pollingapp/model/DisablePoll.java,2\3\2365fde1b0ee12ea5af9cf45d0fbbeb8035a0a63

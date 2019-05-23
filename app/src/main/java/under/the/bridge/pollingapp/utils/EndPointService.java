@@ -17,8 +17,12 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 import retrofit2.http.Url;
 import rx.Observable;
+import under.the.bridge.pollingapp.model.DisablePoll;
 import under.the.bridge.pollingapp.model.PollLoginResponse;
 import under.the.bridge.pollingapp.model.PollingData;
+import under.the.bridge.pollingapp.model.PollingRating;
+import under.the.bridge.pollingapp.model.PollingReview;
+import under.the.bridge.pollingapp.model.PollingStore;
 
 /**
  * Created by ennur on 6/25/16.
@@ -31,5 +35,25 @@ public interface EndPointService {
 
     @GET("polls")
     Observable<PollingData> getPolls();
+
+    @POST("polls/rating")
+    @FormUrlEncoded
+    Observable<PollingRating> postPollingRating(@Field("poll_id") String pollId, @Field("rating") String rating, @Field("user_id") String userId);
+
+    @POST("polls/store")
+    @FormUrlEncoded
+    Observable<PollingStore> postNewPolling(@Field("title") String title, @Field("description") String desc, @Field("user_id") String userId, @Field("type") String type);
+
+    @POST("polls/review")
+    @FormUrlEncoded
+    Observable<PollingReview> postPollsReview(@Field("poll_id") String pollId, @Field("user_id") String userId, @Field("review") String review);
+
+    @POST("polls/byuser_id")
+    @FormUrlEncoded
+    Observable<PollingData> getPollsByUser(@Field("user_id") String userId);
+
+    @POST("polls/destroy")
+    @FormUrlEncoded
+    Observable<DisablePoll> postDestroyPoll(@Field("poll_id") String pollId);
 
 }

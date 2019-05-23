@@ -1,14 +1,14 @@
 
 rsquid:S00100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òú™£ÿÿÿÿÿ8î¥üÄ©-
-lsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öœé8î¥üÄ©-
-rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òƒ“¨şÿÿÿÿ8î¥üÄ©-
-rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘±ˆÙÿÿÿÿÿ8î¥üÄ©-
 osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öœé8î¥üÄ©-
-tsquid:S00116"URename this field "expires_in" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¾ÜÃ8î¥üÄ©-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œîÆ8î¥üÄ©-
-msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œîÆ8î¥üÄ©-
-usquid:S00117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òú™£ÿÿÿÿÿ8î¥üÄ©-
-rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³Õ·úÿÿÿÿ8î¥üÄ©-
 vsquid:S00116
 "WRename this field "access_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µäøª8î¥üÄ©-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘±ˆÙÿÿÿÿÿ8î¥üÄ©-
+usquid:S00117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òú™£ÿÿÿÿÿ8î¥üÄ©-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³Õ·úÿÿÿÿ8î¥üÄ©-
+lsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öœé8î¥üÄ©-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òƒ“¨şÿÿÿÿ8î¥üÄ©-
+msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œîÆ8î¥üÄ©-
 tsquid:S00116"URename this field "token_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö›ÿ8î¥üÄ©-
+tsquid:S00116"URename this field "expires_in" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¾ÜÃ8î¥üÄ©-
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œîÆ8î¥üÄ©-
